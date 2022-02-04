@@ -1,15 +1,17 @@
 FROM node:14-alpine
 
+RUN npm install -g pnpm
+
 WORKDIR /app
 
-COPY package.json package-lock.json yarn.lock svelte.config.js ./
+COPY package.json package-lock.json pnpm-lock.yaml svelte.config.js ./
 
-RUN yarn install
+RUN pnpm install
 
 COPY . .
 
-RUN yarn build
+RUN pnpm build
 
 EXPOSE 3000
 
-CMD ["yarn", "dev", "--host", "0.0.0.0"]
+CMD ["pnpm", "dev", "--host", "0.0.0.0"]

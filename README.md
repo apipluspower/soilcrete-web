@@ -4,13 +4,13 @@
 to run this project
 
 ```bash
-yarn install
-yarn run dev
+pnpm install
+pnpm run dev
 ```
 ## build and generate static web
 
 ```bash
-yarn build
+pnpm build
 ```
 
 ## deployment

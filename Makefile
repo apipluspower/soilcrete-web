@@ -1,11 +1,7 @@
 default: run
 
 install:
-	yarn install
+	pnpm install
 
 run:
-	yarn run dev
-
-helo:
-	@echo hi
-	@echo my name is umim
+	pnpm run dev
