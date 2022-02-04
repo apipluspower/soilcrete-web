@@ -25,6 +25,7 @@ _output
 /types
 /package-lock.json
 /yarn.lock
+/pnpm-lock.yaml
 
 /site/.svelte-kit/
 /site/build/
