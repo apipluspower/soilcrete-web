@@ -3,5 +3,8 @@
   import PortfolioBody from '$lib/components/portfolio/PortfolioBody.svelte'
 </script>
 
-<Header img="header/portfolio_header.png" title="ผลงาน" />
+<Header
+  img="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/header/portfolio_header.png"
+  title="ผลงาน"
+/>
 <PortfolioBody />

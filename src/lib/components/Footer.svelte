@@ -5,7 +5,7 @@
   <div class="container mx-auto px-6">
     <img
       class="lg:hidden md:hidden mb-2 mt-4 m-auto items-center"
-      src="./WhiteLogo.png"
+      src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/WhiteLogo.png"
       height="40px"
       width="128.5px"
       alt=""

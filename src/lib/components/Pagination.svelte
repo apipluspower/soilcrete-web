@@ -54,7 +54,11 @@
           class="btn-next-prev flex flex-row items-center"
           on:click={() => setPage(page - 1)}
         >
-          <img src="foundations/arrow_left.svg" class="cursor-pointer mr-4" alt="" />
+          <img
+            src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/arrow_left.svg"
+            class="cursor-pointer mr-4"
+            alt=""
+          />
           Prev
         </button>
       </li>
@@ -77,7 +81,11 @@
           on:click={() => setPage(page + 1)}
         >
           Next
-          <img src="foundations/arrow_right.svg" class="cursor-pointer ml-4" alt="" />
+          <img
+            src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/foundations/arrow_right.svg"
+            class="cursor-pointer ml-4"
+            alt=""
+          />
         </button>
       </li>
     </ul>

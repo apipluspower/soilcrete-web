@@ -5,17 +5,17 @@ interface data {
 };
 export const stats: data[] = [
     {
-        svg: "project_stat.svg",
+        svg: "https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/project_stat.svg",
         value: 99999,
         title: "PROJECT"
     },
     {
-        svg: "user_stat.svg",
+        svg: "https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/user_stat.svg",
         value: 99999,
         title: "CLIENTS"
     },
     {
-        svg: "chart_stat.svg",
+        svg: "https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/chart_stat.svg",
         value: 99999,
         title: "YEAR"
     },

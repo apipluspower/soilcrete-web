@@ -19,14 +19,18 @@
     การประยุกต์ใช้ประโยชน์จาก CEMENT COLUMN
   </p>
   <div class="md:flex md:flex-row-reverse gap-10 hidden">
-    <img class="pic" src="foundations/content.png" />
+    <img
+      alt=""
+      class="pic"
+      src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/foundations/content.png"
+    />
     <Pagination />
   </div>
   <div class="text-base text-white md:hidden flex flex-col items-center">
     <p class="pb-10">Cement Column สามารถใช้งานได้หลากหลายรูปแบบ ดังตัวอย่างต่อไปนี้</p>
     <div class="flex flex-row md:hidden gap-12 sm-content">
       <img
-        src="foundations/arrow_left.svg"
+        src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/foundations/arrow_left.svg"
         class="cursor-pointer"
         width="24px"
         height="24px"
@@ -43,7 +47,7 @@
         {/each}
       </div>
       <img
-        src="foundations/arrow_right.svg"
+        src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/foundations/arrow_right.svg"
         class="cursor-pointer"
         width="24px"
         height="24px"

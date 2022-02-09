@@ -16,7 +16,7 @@
   <div class="flex flex-row items-center gap-12">
     <div class="hidden md:flex md:gap-12">
       <img
-        src="arrow_left.svg"
+        src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/arrow_left.svg"
         class="cursor-pointer"
         width="24px"
         height="24px"
@@ -35,7 +35,7 @@
         {/each}
       </div>
       <img
-        src="arrow_right.svg"
+        src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/arrow_right.svg"
         class="cursor-pointer"
         width="24px"
         height="24px"

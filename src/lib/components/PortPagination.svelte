@@ -42,21 +42,22 @@
     current = p.toString()
   }
 </script>
+
 <div class="mb-4">
-<Select
-  options={[
-    { text: 'All' },
-    { text: 'งานระบบป้องกันดินพัง สำหรับงานขุดดิน' },
-    { text: 'งานเสริมเสถียรภาพ ริมตลิง/สระ/อ่าง' },
-    { text: 'งานเสริมเสถียรภาพเขื่อน' },
-    { text: 'งานเสริมเสถียรภาพปล่องอุโมงค์' },
-    { text: 'งานลดการทรุดตัวของดิน' },
-    { text: 'งานลดการซึมผ่านของน้ำ' },
-    { text: 'อื่น ๆ' }
-  ]}
-  display_func={o => o.text}
-  bind:value={selected}
-/>
+  <Select
+    options={[
+      { text: 'All' },
+      { text: 'งานระบบป้องกันดินพัง สำหรับงานขุดดิน' },
+      { text: 'งานเสริมเสถียรภาพ ริมตลิง/สระ/อ่าง' },
+      { text: 'งานเสริมเสถียรภาพเขื่อน' },
+      { text: 'งานเสริมเสถียรภาพปล่องอุโมงค์' },
+      { text: 'งานลดการทรุดตัวของดิน' },
+      { text: 'งานลดการซึมผ่านของน้ำ' },
+      { text: 'อื่น ๆ' }
+    ]}
+    display_func={o => o.text}
+    bind:value={selected}
+  />
 </div>
 <div class="flex flex-col items-center content-box">
   {#each currentPageRows as row, i}
@@ -80,7 +81,11 @@
           class="btn-next-prev flex flex-row items-center"
           on:click={() => setPage(page - 1)}
         >
-          <img src="portfolio/arrow_left.svg" class="cursor-pointer mr-4" alt="" />
+          <img
+            src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/portfolio/arrow_left.svg"
+            class="cursor-pointer mr-4"
+            alt=""
+          />
           Prev
         </button>
       </li>
@@ -108,7 +113,11 @@
           on:click={() => setPage(page + 1)}
         >
           Next
-          <img src="portfolio/arrow_right.svg" class="cursor-pointer ml-4" alt="" />
+          <img
+            src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/portfolio/arrow_right.svg"
+            class="cursor-pointer ml-4"
+            alt=""
+          />
         </button>
       </li>
     </ul>

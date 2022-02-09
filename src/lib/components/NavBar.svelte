@@ -2,7 +2,7 @@
   import '../../global.postcss'
   import { lang_style } from '../../stores/lang_style'
   import { onDestroy } from 'svelte'
-  let current = 'landing';
+  let current = 'landing'
   let th: string
   let eng: string
   let displayStatus: string = 'hidden'
@@ -35,7 +35,7 @@
       <div class="flex flex-wrap flex-row justify-between items-center px-5 pt-5">
         <img
           class="menu md:hidden items-center m-2"
-          src="./WhiteLogo.png"
+          src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/WhiteLogo.png"
           height="32px"
           width="116px"
           alt=""
@@ -81,39 +81,45 @@
     <div
       class="hidden md:ml-auto md:mr-auto md:flex md:flex-wrap md:items-center text-base md:justify-center"
     >
-      <a href="/" class="menu-desktop {current === 'landing' ? 'selected' : ''}"
-      on:click="{() => current = 'landing'}">
+      <a
+        href="/"
+        class="menu-desktop {current === 'landing' ? 'selected' : ''}"
+        on:click={() => (current = 'landing')}
+      >
         หน้าแรก
       </a>
       <a
         href="/about"
         class="menu-desktop {current === 'about' ? 'selected' : ''}"
-        on:click="{() => current = 'about'}"
+        on:click={() => (current = 'about')}
       >
         เกี่ยวกับบริษัท
       </a>
-      <a href="/portfolio" class="menu-desktop {current === 'portfolio' ? 'selected' : ''}"
-      on:click="{() => current = 'portfolio'}">
+      <a
+        href="/portfolio"
+        class="menu-desktop {current === 'portfolio' ? 'selected' : ''}"
+        on:click={() => (current = 'portfolio')}
+      >
         ผลงาน
       </a>
       <a
         href="/service"
         class="menu-desktop {current === 'service' ? 'selected' : ''}"
-        on:click="{() => current = 'service'}"
+        on:click={() => (current = 'service')}
       >
         บริการของเรา
       </a>
       <a
         href="/foundations"
         class="menu-desktop {current === 'foundations' ? 'selected' : ''}"
-        on:click="{() => current = 'foundations'}"
+        on:click={() => (current = 'foundations')}
       >
         เสาเข็มดินซีเมนต์
       </a>
       <a
         href="/contact"
         class="menu-desktop {current === 'contact' ? 'selected' : ''}"
-        on:click="{() => current = 'contact'}"
+        on:click={() => (current = 'contact')}
       >
         ติดต่อเรา
       </a>

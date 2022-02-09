@@ -36,7 +36,7 @@
     );
   }
   header {
-    background-image: url(header/landing_header.png);
+    background-image: url(https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/header/landing_header.png);
     height: 618px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,7 +47,7 @@
       background: linear-gradient(to bottom right, transparent 55%, #014baa 25%);
     }
     header {
-      background-image: url(header/landing_header.png);
+      background-image: url(https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/header/landing_header.png);
       height: 424px;
       background-repeat: no-repeat;
       background-size: cover;
