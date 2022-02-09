@@ -55,7 +55,7 @@
           on:click={() => setPage(page - 1)}
         >
           <img
-            src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/arrow_left.svg"
+            src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/foundations/arrow_left.svg"
             class="cursor-pointer mr-4"
             alt=""
           />
