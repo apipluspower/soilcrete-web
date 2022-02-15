@@ -2,6 +2,8 @@ FROM node:14-alpine
 
 RUN npm install -g pnpm
 
+RUN nmp start
+
 WORKDIR /app
 
 # COPY package.json package-lock.json pnpm-lock.yaml svelte.config.js ./
