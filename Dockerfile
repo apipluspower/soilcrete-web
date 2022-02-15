@@ -6,11 +6,11 @@ WORKDIR /app
 
 # COPY package.json package-lock.json pnpm-lock.yaml svelte.config.js ./
 
-COPY . .
+
 
 RUN pnpm install
 
-# COPY . .
+COPY . .
 
 RUN pnpm build
 
