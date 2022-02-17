@@ -4,7 +4,12 @@
 <header>
   <div class="box w-screen md:h-2/4">
     <div class="description flex flex-col items-end pt-52 pr-7 md:pt-40 md:pr-16">
-      <img class="logo hidden md:block" src="/WhiteLogo.png" width="458px" alt="" />
+      <img
+        class="logo hidden md:block"
+        src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/WhiteLogo.png"
+        width="458px"
+        alt=""
+      />
       <p class="text-2xl md:text-4xl font-bold text-right text-white pb-3 min-w-5/12">
         บริษัทซอยล์กรีต เทค จํากัด
       </p>

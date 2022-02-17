@@ -38,7 +38,7 @@
           />
           <div class="hidden mb-4 justify-center md:grid md:grid-cols-5 md:gap-4">
             {#each { length: 5 } as _, i}
-              <img src={datas[(i + x) % datas.length].pic} />
+              <img src={datas[(i + x) % datas.length].pic} alt="" />
             {/each}
           </div>
           <img
@@ -61,7 +61,7 @@
           />
           <div class="grid grid-cols-2 md:hidden gap-4 justify-center">
             {#each { length: 2 } as _, i}
-              <img src={datas[(i + x) % datas.length].pic} />
+              <img src={datas[(i + x) % datas.length].pic} alt="" />
             {/each}
           </div>
           <img
@@ -91,10 +91,4 @@
 </div>
 
 <style>
-  .description {
-    min-width: 343px;
-  }
-  .contact-name {
-    min-width: 343px;
-  }
 </style>
