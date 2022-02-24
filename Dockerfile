@@ -1,10 +1,10 @@
-FROM node:14-alpine
+FROM node:14-alpine as builder
 
 RUN npm install -g pnpm
 
 WORKDIR /app
 
-COPY package.json package-lock.json pnpm-lock.yaml svelte.config.js ./
+COPY package.json svelte.config.js ./
 
 RUN pnpm install
 
@@ -12,6 +12,10 @@ COPY . .
 
 RUN pnpm build
 
+FROM node:14-alpine
+
+COPY --from=builder /app .
+
 EXPOSE 3000
 
-CMD ["pnpm", "dev", "--host", "0.0.0.0"]
+CMD [ "node", "build" ]

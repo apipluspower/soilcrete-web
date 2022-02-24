@@ -34,3 +34,6 @@ _output
 build/*
 build
 .svelte-kit
+deployment.yaml
+virtualservice.yaml
+service.yaml
