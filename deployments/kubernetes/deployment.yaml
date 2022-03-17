@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: soilcrete
+spec:
+  selector:
+    matchLabels:
+      app: soilcrete
+  template:
+    metadata:
+      labels:
+        app: soilcrete
+    spec:
+      containers:
+        - name: soilcrete
+          image: ghcr.io/apipluspower/soilcrete:latest
+          imagePullPolicy: Always # set to Never when you want to use local image
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "50m"
+          ports:
+            - containerPort: 3000
+      imagePullSecrets:
+        - name: regcred
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: soilcrete
+spec:
+  selector:
+    app: soilcrete
+  ports:
+    - port: 3000
+      targetPort: 3000
+
+---
+
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: soilcrete
+  namespace: soilcrete
+spec:
+  hosts:
+    - soilcrete.vongjon.com
+  gateways:
+    - istio-system/gateway
+  http:
+    - match:
+        - uri:
+            prefix: /
+      route:
+        - destination:
+            host: soilcrete.soilcrete.svc.cluster.local
+            port:
+              number: 3000
