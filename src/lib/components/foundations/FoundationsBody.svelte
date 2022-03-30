@@ -1,12 +1,15 @@
 <script lang="ts">
   import { datas } from '../../data/foundationsPics'
   let x: number = 0
+  let selected: string = datas[0].pic
   function prev(length: number) {
     x = x - length
+    selected = datas[x % datas.length].pic
   }
 
   function next(length: number) {
     x = x + length
+    selected = datas[x % datas.length].pic
   }
 </script>
 
@@ -26,7 +29,7 @@
         วิธีการทำงานทั่วไป
       </p>
       <div class="pics order-first md:order-2">
-        <img class="m-auto mb-4" src="/foundations/body_foundations.png" alt="" />
+        <img class="m-auto mb-4 w-1/2 h-auto rounded" src={selected} alt="" />
         <div class="hidden md:flex md:gap-4 md:justify-center">
           <img
             src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/arrow_left.svg"
@@ -34,11 +37,19 @@
             width="16px"
             height="16px"
             alt=""
-            on:click={() => prev(5)}
+            on:click={() => prev(1)}
           />
-          <div class="hidden mb-4 justify-center md:grid md:grid-cols-5 md:gap-4">
+          <div
+            class="hidden mb-4 justify-center md:grid md:grid-cols-5 md:gap-4 rounded cursor-pointer"
+          >
             {#each { length: 5 } as _, i}
-              <img src={datas[(i + x) % datas.length].pic} alt="" />
+              <img
+                src={datas[(i + x) % datas.length].pic}
+                alt=""
+                on:click={() => {
+                  selected = datas[(i + x) % datas.length].pic
+                }}
+              />
             {/each}
           </div>
           <img
@@ -47,7 +58,7 @@
             width="16px"
             height="16px"
             alt=""
-            on:click={() => next(5)}
+            on:click={() => next(1)}
           />
         </div>
         <div class="flex md:hidden gap-4 justify-center mb-4">
@@ -57,11 +68,17 @@
             width="24px"
             height="24px"
             alt=""
-            on:click={() => prev(2)}
+            on:click={() => prev(1)}
           />
-          <div class="grid grid-cols-2 md:hidden gap-4 justify-center">
+          <div class="grid grid-cols-2 md:hidden gap-4 justify-center rounded cursor-pointer">
             {#each { length: 2 } as _, i}
-              <img src={datas[(i + x) % datas.length].pic} alt="" />
+              <img
+                src={datas[(i + x) % datas.length].pic}
+                alt=""
+                on:click={() => {
+                  selected = datas[(i + x) % datas.length].pic
+                }}
+              />
             {/each}
           </div>
           <img
@@ -70,7 +87,7 @@
             width="24px"
             height="24px"
             alt=""
-            on:click={() => next(2)}
+            on:click={() => next(1)}
           />
         </div>
       </div>

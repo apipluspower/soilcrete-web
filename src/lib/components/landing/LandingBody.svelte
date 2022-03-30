@@ -3,9 +3,9 @@
 </script>
 
 <div
-  class="grid grid-cols-1 md:gap-20 gap-5 place-items-center text-center text-black-1 m-auto py-10"
+  class="grid grid-cols-1 md:gap-14 gap-5 place-items-center text-center text-black-1 m-auto py-10"
 >
-  <p class="text-3xl md:text-7xl font-bold">ปัญหาดินทรุด นึกถึงซอยล์กรีต</p>
+  <p class="text-3xl md:text-7xl font-bold">ปัญหาดินทรุด ดินสไลด์​ ซอย​กรีต เทค​ ช่วยท่าน​ได้</p>
   {#each datas as data}
     <div class={data.responsive}>
       <img src="body_Icon.svg" alt="" />

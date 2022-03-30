@@ -2,7 +2,7 @@
   import { services } from '../../data/service'
 </script>
 
-<div class="bg-primary py-10">
+<div class="bg-primary py-24 px-32">
   <p class="text-secondary text-center font-bold text-3xl md:text-7xl md:mb-20 mb-5">งานบริการ</p>
   <div class="grid gap-14 grid-cols-1 justify-items-center mb-5 md:grid-cols-2">
     {#each services as service}
