@@ -21,7 +21,7 @@
   <div class="md:flex md:flex-row-reverse gap-10 hidden">
     <img
       alt=""
-      class="pic"
+      class="pic pb-10"
       src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/foundations/content.png"
     />
     <Pagination />

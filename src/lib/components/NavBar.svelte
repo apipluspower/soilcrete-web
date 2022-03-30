@@ -53,9 +53,9 @@
       <div class="{displayStatus} flex-col md:hidden lg:hidden w-full text-center self-end rounded">
         <a href="/" class="menu-mobile" on:click={toggleMenu}>หน้าแรก</a>
         <a href="/about" class="menu-mobile" on:click={toggleMenu}>เกี่ยวกับบริษัท</a>
-        <a href="/portfolio" class="menu-mobile" on:click={toggleMenu}>ผลงาน</a>
         <a href="/service" class="menu-mobile" on:click={toggleMenu}>บริการของเรา</a>
         <a href="/foundations" class="menu-mobile" on:click={toggleMenu}>เสาเข็มดินซีเมนต์</a>
+        <a href="/portfolio" class="menu-mobile" on:click={toggleMenu}>ผลงาน</a>
         <a href="/contact" class="menu-mobile" on:click={toggleMenu}>ติดต่อเรา</a>
         <div class="menu-mobile">
           <button
@@ -96,13 +96,6 @@
         เกี่ยวกับบริษัท
       </a>
       <a
-        href="/portfolio"
-        class="menu-desktop {current === 'portfolio' ? 'selected' : ''}"
-        on:click={() => (current = 'portfolio')}
-      >
-        ผลงาน
-      </a>
-      <a
         href="/service"
         class="menu-desktop {current === 'service' ? 'selected' : ''}"
         on:click={() => (current = 'service')}
@@ -115,6 +108,13 @@
         on:click={() => (current = 'foundations')}
       >
         เสาเข็มดินซีเมนต์
+      </a>
+      <a
+        href="/portfolio"
+        class="menu-desktop {current === 'portfolio' ? 'selected' : ''}"
+        on:click={() => (current = 'portfolio')}
+      >
+        ผลงาน
       </a>
       <a
         href="/contact"
