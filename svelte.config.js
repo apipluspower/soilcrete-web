@@ -1,7 +1,6 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-node';
  import preprocess from 'svelte-preprocess';
 
- const dev = "production" === "development";
  /** @type {import('@sveltejs/kit').Config} */
  const config = {
  	// Consult https://github.com/sveltejs/svelte-preprocess
@@ -14,14 +13,10 @@ import adapter from '@sveltejs/adapter-static';
       postcss: true
     })
   ],
+
  	kit: {
- 		adapter: adapter({
-      pages: "docs",
-      assets: "docs"
-    }),
-    paths: {
-      base: dev ? "" : "/soilcrete-web",
-    },
+ 		adapter: adapter(),
+
  		// hydrate the <div id="svelte"> element in src/app.html
  	}
  };
