@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-static';
  import preprocess from 'svelte-preprocess';
 
  /** @type {import('@sveltejs/kit').Config} */
@@ -15,8 +15,12 @@ import adapter from '@sveltejs/adapter-node';
   ],
 
  	kit: {
- 		adapter: adapter(),
-
+ 		adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: null
+    }),
+    prerender : { default: true},
  		// hydrate the <div id="svelte"> element in src/app.html
  	}
  };

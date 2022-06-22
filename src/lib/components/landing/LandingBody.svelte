@@ -8,7 +8,7 @@
   <p class="text-3xl md:text-7xl font-bold">ปัญหาดินทรุด ดินสไลด์​ ซอย​กรีต เทค​ ช่วยท่าน​ได้</p>
   {#each datas as data}
     <div class={data.responsive}>
-      <img src="body_Icon.svg" alt="" />
+      <img src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/body_Icon.svg" alt="" />
       <p class="hidden md:flex md:text-4xl md:font-bold">
         {data.desktop_des}
       </p>

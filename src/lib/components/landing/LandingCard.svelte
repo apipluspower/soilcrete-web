@@ -1,4 +1,4 @@
-<script lang="ts">
++<script lang="ts">
   import Card from '../Card.svelte'
   import { projects } from '../../data/project'
   let x: number = 0
@@ -45,7 +45,7 @@
     </div>
     <div class="flex md:hidden gap-12">
       <img
-        src="arrow_left.svg"
+        src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/arrow_left.svg"
         class="cursor-pointer"
         width="24px"
         height="24px"
@@ -64,7 +64,7 @@
         {/each}
       </div>
       <img
-        src="arrow_right.svg"
+        src="https://soilcrete-static-pictures.s3.us-west-002.backblazeb2.com/arrow_right.svg"
         class="cursor-pointer"
         width="24px"
         height="24px"
